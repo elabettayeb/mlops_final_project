@@ -8,14 +8,12 @@ from src.utils import (
 )
 
 
-
 def test_ensure_dir():
     """Test directory creation"""
     with tempfile.TemporaryDirectory() as tmpdir:
         test_dir = Path(tmpdir) / "test" / "nested" / "dir"
         ensure_dir(str(test_dir))
         assert test_dir.exists()
-
 
 
 def test_save_and_load_metrics():
@@ -31,7 +29,6 @@ def test_save_and_load_metrics():
         assert metrics_file.exists()
         loaded_metrics = load_metrics(str(metrics_file))
         assert loaded_metrics == metrics
-
 
 
 def test_calculate_regression_metrics():
@@ -50,7 +47,6 @@ def test_calculate_regression_metrics():
     assert 0 <= metrics['r2'] <= 1
 
 
-
 def test_calculate_classification_metrics():
     """Test classification metrics calculation"""
     y_true = np.array([0, 1, 1, 0, 1, 0])
@@ -64,7 +60,6 @@ def test_calculate_classification_metrics():
     assert 0 <= metrics['precision'] <= 1
     assert 0 <= metrics['recall'] <= 1
     assert 0 <= metrics['f1'] <= 1
-
 
 
 def test_calculate_classification_metrics_with_proba():
