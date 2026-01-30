@@ -1,8 +1,8 @@
 stages:
   train:
-    cmd: /home/abenabderrazak/Bureau/djerba-dreamer-main/.venv/bin/python train.py
+    cmd: python3 train.py
     deps:
-    - data/raw/mlops_dataset_v1_original.csv
+    - data/raw/mlops_dataset_v3.csv
     - train.py
     outs:
     - model.pkl
