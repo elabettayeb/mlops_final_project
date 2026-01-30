@@ -1,0 +1,8 @@
+dataset:
+  test_size: 0.2
+  val_size: 0.1
+  random_state: 42
+preprocessing:
+  handle_missing: mean  # options: mean, median, drop
+  outlier_threshold: 3  # Z-score threshold
+  scaler: standard      # options: standard, minmax, robust
