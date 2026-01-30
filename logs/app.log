@@ -501,3 +501,24 @@
 2026-01-30 21:42:01,988 - src.utils - INFO - Training final model with best parameters...
 2026-01-30 21:42:02,200 - src.utils - INFO - Best model saved to v3/model_optimized.pkl
 2026-01-30 21:42:05,984 - src.utils - INFO - Optimization complete!
+2026-01-31 00:33:12,548 - src.utils - INFO - Loading training and validation data...
+2026-01-31 00:33:12,560 - src.utils - INFO - Training data shape: (253, 10)
+2026-01-31 00:33:12,561 - src.utils - INFO - Validation data shape: (37, 10)
+2026-01-31 00:33:13,393 - src.utils - INFO - Starting MLflow run...
+2026-01-31 00:33:13,404 - src.utils - INFO - Using RandomForestRegressor
+2026-01-31 00:33:13,432 - src.utils - INFO - Training model...
+2026-01-31 00:33:13,817 - src.utils - INFO - Training completed in 0.38 seconds
+2026-01-31 00:33:13,826 - src.utils - INFO - Performing cross-validation...
+2026-01-31 00:33:14,974 - src.utils - INFO - CV Score: -311.0278 (+/- 15.7441)
+2026-01-31 00:33:15,030 - src.utils - INFO - --- Training Metrics ---
+2026-01-31 00:33:15,030 - src.utils - INFO - mae: 95.6621
+2026-01-31 00:33:15,031 - src.utils - INFO - rmse: 114.6280
+2026-01-31 00:33:15,031 - src.utils - INFO - r2: 0.9087
+2026-01-31 00:33:15,031 - src.utils - INFO - --- Validation Metrics ---
+2026-01-31 00:33:15,031 - src.utils - INFO - mae: 280.8327
+2026-01-31 00:33:15,031 - src.utils - INFO - rmse: 334.7804
+2026-01-31 00:33:15,032 - src.utils - INFO - r2: 0.3771
+2026-01-31 00:33:15,056 - src.utils - INFO - Top 10 important features:
+2026-01-31 00:33:22,999 - src.utils - INFO - Model logged to MLflow
+2026-01-31 00:33:23,034 - src.utils - INFO - Model saved to v1/model.pkl
+2026-01-31 00:33:23,034 - src.utils - INFO - MLflow Run ID: eb16cae8dfa34480a697e056a6520af1
