@@ -1,8 +1,10 @@
+import sys
 from pathlib import Path
 import tempfile
 import numpy as np
 
-from src.utils import (
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from utils import (
     save_metrics, load_metrics, calculate_regression_metrics,
     calculate_classification_metrics, ensure_dir
 )
