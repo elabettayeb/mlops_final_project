@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python3 train.py
+    deps:
+    - path: data/raw/mlops_dataset_v3.csv
+      hash: md5
+      md5: d8c96afe2c368cab07b9258cc6d10e4a
+      size: 136381
+    - path: train.py
+      hash: md5
+      md5: 8e7c89db5fe1f27b27e0817d2159b3ba
+      size: 829
+    outs:
+    - path: model.pkl
+      hash: md5
+      md5: 699191a759f32fc09fb15dfc90999fdf
+      size: 5915617

@@ -1,0 +1,26 @@
+Comparaison des versions DVC du dataset :
+
+---
+
+# Différence entre v1 (401 lignes) et v2 (700 lignes)
+Aucune différence dans les fichiers .dvc (seul le hash change, ce qui est normal pour DVC).
+
+# Différence entre v2 (700 lignes) et v3 (toutes les lignes)
+Aucune différence dans les fichiers .dvc (seul le hash change, ce qui est normal pour DVC).
+
+# Différence entre v1 (401 lignes) et v3 (toutes les lignes)
+
+(diff --git a/data/raw/mlops_dataset_v3.csv.dvc b/data/raw/mlops_dataset_v3.csv.dvc)
+new file mode 100644
+index 0000000..32b15b3
+--- /dev/null
++++ b/data/raw/mlops_dataset_v3.csv.dvc
+@@ -0,0 +1,5 @@
++outs:
++- md5: 7ce730d32ef1e31b5c52bcba0cec82b6
++  size: 132322
++  hash: md5
++  path: mlops_dataset_v3.csv
+
+Pour comparer le contenu réel des CSV, il faut utiliser un diff sur les fichiers CSV eux-mêmes (localement, car ils ne sont pas suivis par Git mais par DVC).
+

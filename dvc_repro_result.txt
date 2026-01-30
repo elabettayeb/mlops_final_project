@@ -1,0 +1,5 @@
+Résultat de la commande dvc repro (pipeline relancé sans changement) :
+
+'data/raw/mlops_dataset_v3.csv.dvc' didn't change, skipping
+Stage 'train' didn't change, skipping
+Data and pipelines are up to date.
